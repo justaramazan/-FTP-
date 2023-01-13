@@ -1,0 +1,46 @@
+2022-12-18 02:56:51,017 [INFO] __init__: Запуск сервера..
+2022-12-18 02:56:51,019 [INFO] __init__: Сервер инициализировался, слушает порт 9090
+2022-12-18 02:57:05,044 [INFO] connection_processing: Новое соединение от 127.0.0.1
+2022-12-18 02:57:05,045 [INFO] server_router: Server router работает в отдельном потоке!
+2022-12-18 02:57:06,810 [INFO] auth_logic: Клиент 127.0.0.1 -> авторизация не удалась
+2022-12-18 02:57:06,810 [INFO] send_message: Сообщение {'result': False, 'description': 'wrong auth'} было отправлено клиенту 127.0.0.1
+2022-12-18 02:57:06,810 [INFO] auth_logic: Клиент 127.0.0.1. Отправили данные о результате авторизации
+2022-12-18 02:57:06,810 [INFO] server_router: Отключение клиента 127.0.0.1
+2022-12-18 02:57:06,811 [INFO] connection_processing: Новое соединение от 127.0.0.1
+2022-12-18 02:57:06,811 [INFO] server_router: Server router работает в отдельном потоке!
+2022-12-18 02:57:12,375 [INFO] auth_logic: Клиент 127.0.0.1 -> авторизация не удалась
+2022-12-18 02:57:12,375 [INFO] send_message: Сообщение {'result': False, 'description': 'wrong auth'} было отправлено клиенту 127.0.0.1
+2022-12-18 02:57:12,375 [INFO] auth_logic: Клиент 127.0.0.1. Отправили данные о результате авторизации
+2022-12-18 02:57:12,375 [INFO] server_router: Отключение клиента 127.0.0.1
+2022-12-18 02:57:12,376 [INFO] connection_processing: Новое соединение от 127.0.0.1
+2022-12-18 02:57:12,376 [INFO] server_router: Server router работает в отдельном потоке!
+2022-12-18 02:59:05,156 [INFO] server_router: Отключение клиента 127.0.0.1
+2022-12-18 03:00:22,989 [INFO] __init__: Запуск сервера..
+2022-12-18 03:00:22,990 [INFO] __init__: Сервер инициализировался, слушает порт 9090
+2022-12-18 03:00:34,898 [INFO] connection_processing: Новое соединение от 127.0.0.1
+2022-12-18 03:00:34,899 [INFO] server_router: Server router работает в отдельном потоке!
+2022-12-18 03:00:37,355 [INFO] auth_logic: Клиент 127.0.0.1 -> авторизация прошла успешно
+2022-12-18 03:00:37,355 [INFO] auth_logic: Добавили клиента 127.0.0.1 в список авторизации
+2022-12-18 03:00:37,355 [INFO] send_message: Сообщение {'result': True, 'body': {'username': 'user2'}} было отправлено клиенту 127.0.0.1
+2022-12-18 03:00:37,355 [INFO] auth_logic: Клиент 127.0.0.1. Отправили данные о результате авторизации
+2022-12-18 03:00:40,644 [INFO] new_event_logic: Получили команду geh от клиента 127.0.0.1 (user2)
+2022-12-18 03:00:40,645 [INFO] send_message: Сообщение {'result': False, 'description': 'Команда geh не найдена! Список команд:\ncd - Перемещение между папками\nls - Вывод содержимого текущей папки на экран\nmkdir - Создание папки\nrmdir - Удаление папки\ntouch - Создание файла\nrename - Переименование файла/папки\ncat - Чтение файла\nremove - Удаление файла\ncp - Копирование файла/папки\nmv - Перемещение файла/папки\nwrite - Запись в файл'} было отправлено клиенту 127.0.0.1
+2022-12-18 03:00:45,218 [INFO] new_event_logic: Получили команду cd от клиента 127.0.0.1 (user2)
+2022-12-18 03:00:45,218 [INFO] send_message: Сообщение {'result': False, 'description': 'Команда cd была вызвана с некорректными аргументами'} было отправлено клиенту 127.0.0.1
+2022-12-18 03:00:50,951 [INFO] new_event_logic: Получили команду ls от клиента 127.0.0.1 (user2)
+2022-12-18 03:00:50,951 [INFO] send_message: Сообщение {'result': True, 'description': 'Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka'} было отправлено клиенту 127.0.0.1
+2022-12-18 03:00:56,304 [INFO] new_event_logic: Получили команду cd .. от клиента 127.0.0.1 (user2)
+2022-12-18 03:00:56,304 [INFO] send_message: Сообщение {'result': True, 'description': ''} было отправлено клиенту 127.0.0.1
+2022-12-18 03:00:58,250 [INFO] new_event_logic: Получили команду ls от клиента 127.0.0.1 (user2)
+2022-12-18 03:00:58,251 [INFO] send_message: Сообщение {'result': True, 'description': 'Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka'} было отправлено клиенту 127.0.0.1
+2022-12-18 03:01:03,178 [INFO] new_event_logic: Получили команду cd . от клиента 127.0.0.1 (user2)
+2022-12-18 03:01:03,179 [INFO] send_message: Сообщение {'result': True, 'description': ''} было отправлено клиенту 127.0.0.1
+2022-12-18 03:01:05,362 [INFO] new_event_logic: Получили команду ls от клиента 127.0.0.1 (user2)
+2022-12-18 03:01:05,363 [INFO] send_message: Сообщение {'result': True, 'description': 'Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2\\.:\n[dir] AAA\n[file] file_old.txt\n[file] koshka'} было отправлено клиенту 127.0.0.1
+2022-12-18 03:01:08,422 [INFO] new_event_logic: Получили команду cd ... от клиента 127.0.0.1 (user2)
+2022-12-18 03:01:08,422 [INFO] send_message: Сообщение {'result': True, 'description': ''} было отправлено клиенту 127.0.0.1
+2022-12-18 03:01:10,375 [INFO] new_event_logic: Получили команду ls от клиента 127.0.0.1 (user2)
+2022-12-18 03:01:10,376 [INFO] send_message: Сообщение {'result': True, 'description': 'Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka'} было отправлено клиенту 127.0.0.1
+2022-12-18 03:02:17,409 [INFO] new_event_logic: Получили команду ls от клиента 127.0.0.1 (user2)
+2022-12-18 03:02:17,410 [INFO] send_message: Сообщение {'result': True, 'description': 'Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka'} было отправлено клиенту 127.0.0.1
+2022-12-18 03:02:22,706 [INFO] new_event_logic: Получили команду cd C:\ от клиента 127.0.0.1 (user2)

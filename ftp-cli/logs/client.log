@@ -1,0 +1,68 @@
+2022-12-18 02:57:05,044 [INFO] new_connection: Успешное соединение с сервером 127.0.0.1:9090
+2022-12-18 02:57:06,810 [INFO] send_auth: Отправка данных серверу: '{"password": "1"}'
+2022-12-18 02:57:06,811 [INFO] new_connection: Успешное соединение с сервером 127.0.0.1:9090
+2022-12-18 02:57:12,375 [INFO] send_auth: Отправка данных серверу: '{"password": "1234"}'
+2022-12-18 02:57:12,376 [INFO] new_connection: Успешное соединение с сервером 127.0.0.1:9090
+2022-12-18 02:59:05,156 [INFO] __del__: Разрыв соединения с сервером
+2022-12-18 03:00:34,898 [INFO] new_connection: Успешное соединение с сервером 127.0.0.1:9090
+2022-12-18 03:00:37,355 [INFO] send_auth: Отправка данных серверу: '{"password": "1"}'
+2022-12-18 03:00:40,644 [INFO] send_message: Отправка данных серверу: 'gehCRLF_'
+2022-12-18 03:00:40,645 [INFO] read_message: Прием данных от сервера: '{"result": false, "description": "Команда geh не найдена! Список команд:\ncd - Перемещение между папками\nls - Вывод содержимого текущей папки на экран\nmkdir - Создание папки\nrmdir - Удаление папки\ntouch - Создание файла\nrename - Переименование файла/папки\ncat - Чтение файла\nremove - Удаление файла\ncp - Копирование файла/папки\nmv - Перемещение файла/папки\nwrite - Запись в файл"}CRLF_'
+2022-12-18 03:00:40,645 [INFO] read_message: Получили результат выполнения команды: Команда geh не найдена! Список команд:
+cd - Перемещение между папками
+ls - Вывод содержимого текущей папки на экран
+mkdir - Создание папки
+rmdir - Удаление папки
+touch - Создание файла
+rename - Переименование файла/папки
+cat - Чтение файла
+remove - Удаление файла
+cp - Копирование файла/папки
+mv - Перемещение файла/папки
+write - Запись в файл
+2022-12-18 03:00:45,218 [INFO] send_message: Отправка данных серверу: 'cdCRLF_'
+2022-12-18 03:00:45,218 [INFO] read_message: Прием данных от сервера: '{"result": false, "description": "Команда cd была вызвана с некорректными аргументами"}CRLF_'
+2022-12-18 03:00:45,218 [INFO] read_message: Получили результат выполнения команды: Команда cd была вызвана с некорректными аргументами
+2022-12-18 03:00:50,951 [INFO] send_message: Отправка данных серверу: 'lsCRLF_'
+2022-12-18 03:00:50,951 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": "Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka"}CRLF_'
+2022-12-18 03:00:50,952 [INFO] read_message: Получили результат выполнения команды: Содержимое C:\project\2cours\ssip\ftp\ftp-server\storage\user2:
+[dir] AAA
+[file] file_old.txt
+[file] koshka
+2022-12-18 03:00:56,304 [INFO] send_message: Отправка данных серверу: 'cd ..CRLF_'
+2022-12-18 03:00:56,304 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": ""}CRLF_'
+2022-12-18 03:00:56,304 [INFO] read_message: Получили результат выполнения команды: 
+2022-12-18 03:00:58,250 [INFO] send_message: Отправка данных серверу: 'lsCRLF_'
+2022-12-18 03:00:58,251 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": "Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka"}CRLF_'
+2022-12-18 03:00:58,251 [INFO] read_message: Получили результат выполнения команды: Содержимое C:\project\2cours\ssip\ftp\ftp-server\storage\user2:
+[dir] AAA
+[file] file_old.txt
+[file] koshka
+2022-12-18 03:01:03,178 [INFO] send_message: Отправка данных серверу: 'cd .CRLF_'
+2022-12-18 03:01:03,179 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": ""}CRLF_'
+2022-12-18 03:01:03,179 [INFO] read_message: Получили результат выполнения команды: 
+2022-12-18 03:01:05,362 [INFO] send_message: Отправка данных серверу: 'lsCRLF_'
+2022-12-18 03:01:05,363 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": "Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2\\.:\n[dir] AAA\n[file] file_old.txt\n[file] koshka"}CRLF_'
+2022-12-18 03:01:05,363 [INFO] read_message: Получили результат выполнения команды: Содержимое C:\project\2cours\ssip\ftp\ftp-server\storage\user2\.:
+[dir] AAA
+[file] file_old.txt
+[file] koshka
+2022-12-18 03:01:08,422 [INFO] send_message: Отправка данных серверу: 'cd ...CRLF_'
+2022-12-18 03:01:08,422 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": ""}CRLF_'
+2022-12-18 03:01:08,422 [INFO] read_message: Получили результат выполнения команды: 
+2022-12-18 03:01:10,375 [INFO] send_message: Отправка данных серверу: 'lsCRLF_'
+2022-12-18 03:01:10,376 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": "Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka"}CRLF_'
+2022-12-18 03:01:10,376 [INFO] read_message: Получили результат выполнения команды: Содержимое C:\project\2cours\ssip\ftp\ftp-server\storage\user2:
+[dir] AAA
+[file] file_old.txt
+[file] koshka
+2022-12-18 03:02:17,409 [INFO] send_message: Отправка данных серверу: 'lsCRLF_'
+2022-12-18 03:02:17,410 [INFO] read_message: Прием данных от сервера: '{"result": true, "description": "Содержимое C:\\project\\2cours\\ssip\\ftp\\ftp-server\\storage\\user2:\n[dir] AAA\n[file] file_old.txt\n[file] koshka"}CRLF_'
+2022-12-18 03:02:17,410 [INFO] read_message: Получили результат выполнения команды: Содержимое C:\project\2cours\ssip\ftp\ftp-server\storage\user2:
+[dir] AAA
+[file] file_old.txt
+[file] koshka
+2022-12-18 03:02:22,706 [INFO] send_message: Отправка данных серверу: 'cd C:\CRLF_'
+2022-12-18 03:02:24,473 [INFO] send_message: Отправка данных серверу: 'lsCRLF_'
+2022-12-18 03:02:27,555 [INFO] send_message: Отправка данных серверу: 'lsCRLF_'
+2022-12-18 03:02:29,747 [INFO] send_message: Отправка данных серверу: 'cd CRLF_'
